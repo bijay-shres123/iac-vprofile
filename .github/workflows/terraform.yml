@@ -1,4 +1,5 @@
 name: 'Vprofile IAC'
+
 on:
   push:
     branches:
@@ -37,7 +38,7 @@ jobs:
       - name: Setup Terraform with specified version on the runner
         uses: hashicorp/setup-terraform@v2
         with:
-          terraform_version: 1.0.0
+          terraform_version: 1.6.3
 
       - name: Terraform init
         id: init
